@@ -130,19 +130,15 @@ header nav a{
 
 #projects{
     display: flex;
-    flex-direction: column;
     margin-bottom: 5%;
-}
-#projects .row{
-    display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .project{  
     width: 23%;
 }
 #projects img{
     width: 100%;
-    height: auto;
 }
 
 /* ---------------End of Projects ---------------*/
@@ -169,6 +165,13 @@ header nav a{
     #hero .CTA h2{
         font-size: 4.8rem;
     }
+    .project{
+        width: 40%;
+        
+    }
+    #projects{
+        justify-content: space-around;
+    }
 }
 
 /* ---------------End of  @media 800px ---------------*/
@@ -177,11 +180,12 @@ header nav a{
 /* ---------------Start of @media 500px ---------------*/
 
 @media(max-width: 500px){
-    body{
-       background-color: green;
- 
+    #projects{
+        flex-direction: column;
     }
-    
+    .project{
+        width: 100%;
+    }
 }
 
 
